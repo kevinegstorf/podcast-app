@@ -1,0 +1,62 @@
+// Colors //
+$white: #fff;
+$highlight: #d267e4;
+$dark: #22292e;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+// Wrappers //
+
+.wrapper-wide {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.wrapper-skinny {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.cf:before, .cf:after {
+  content: ' ';
+  display: table;
+}
+
+.cd:after {
+  clear: both;
+}
+
+.button {
+  color: $white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  outline: none;
+  border: 0;
+  display: inline-block;
+  min-width: 8.5rem;
+}
+
+.button-highlight {
+  background: $highlight;
+  transition: background .4s ease-in-out;
+  &:hover {
+    background: darken($highlight, 7.5%);
+  }
+}
+
+.button-white{
+  background: $white;
+  color: $dark;
+  transition: background .4s ease-in-out;
+  &:hover {
+    background: darken($white, 7.5%);
+  }
+}
